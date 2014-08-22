@@ -1,11 +1,11 @@
 Semantic Body Illustrations
 ===========================
 
-<div style="position: relative; width: 100%; height: 200px;">
+<div>
+  <center>
     <img src="http://sbb.cellfinder.org/github.svg"
-         alt="Semantic Body Illustrations"
-         style="bottom: 0; height: 100%; left: 0; margin: auto;
-                position: absolute; right: 0; top: 0; width: auto;" />
+         alt="Semantic Body Illustrations" />
+  </center>
 </div>
 
 A set of semantically annotated illustrations of the human and mouse body
