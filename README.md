@@ -1,12 +1,12 @@
 Semantic Body Illustrations
 ===========================
 
-![](github.svg?raw=true)
+![](http://sbb.cellfinder.org/github.svg "Semantic Body Illustrations")
 
 A set of semantically annotated illustrations of the human and mouse body
 featuring the liver and kidney. The illutrations have been created in for the
 [Semantic Body Browser][sbb] - a tool for graphically exploring an organism's
-body. (Lekschas et al.)
+body. (Lekschas *et al.*)
 
 Annotation
 ----------
@@ -72,12 +72,6 @@ License
 | S-Shaped Body<sup>*</sup>          | Lekschas et al.    |                 | [CC BY-SA 4.0][ccbysa4] |
 
 <sup>*</sup> Same for human and mouse illustration.
-
-Citing
-------
-When you are using any work by Lekschas et al. please cite us as follows:
-
-    Lekschas, F et al. (2014) Semantic Body Browser: Graphical exploration of an organism and spatially resolved expression data visualisation. Bioinformatics, X-X, X.
 
 
 [bt]: http://bioportal.bioontology.org/ontologies/BT "BioTop Ontology"
