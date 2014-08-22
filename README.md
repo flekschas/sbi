@@ -1,12 +1,10 @@
 Semantic Body Illustrations
 ===========================
 
-<div>
-  <center>
-    <img src="http://sbb.cellfinder.org/github.svg"
-         alt="Semantic Body Illustrations" />
-  </center>
-</div>
+<p align="center">
+  <img src="http://sbb.cellfinder.org/github.svg"
+       alt="Semantic Body Illustrations" />
+</p>
 
 A set of semantically annotated illustrations of the human and mouse body
 featuring the liver and kidney. The illutrations have been created in for the
