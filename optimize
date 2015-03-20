@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+
+# Parameters
+# ------------------------------------------------------------------------------
+# See usage to get an overview of all parameters
+
+if [ -z "$1" ]
+then
+    echo "No directory specified. See -h for help."
+    exit 1
+fi
+
+SUFFIX="min"
+
+while getopts ":hcs:" opt; do
+    case $opt in
+    h)
+        echo ""
+        echo "USAGE:   optimize [<options>] <directory>"
+        echo ""
+        echo "OPTIONS: -h    Show help"
+        echo "         -s    Suffix for optimized files. (Default 'min')"
+        echo ""
+        exit 0
+        ;;
+    s)
+        SUFFIX=$OPTARG
+        ;;
+    \?)
+        echo "Invalid option: -$OPTARG" >&2
+        ;;
+    :)
+        echo "Option -$OPTARG requires an argument." >&2
+        exit 1
+        ;;
+  esac
+done
+
+
+# Optimize SVG
+# ------------------------------------------------------------------------------
+# Exclude files that have already been optimized meaning that they end with
+# $SUFFIX.svg
+
+shopt -s extglob
+for SVG in $1/!(*$SUFFIX).svg;
+do
+    # Extract file name
+    FILENAME=$(echo "${SVG}" | perl -nle 'm/([^\/]+)\.svg$/; print $1')
+
+    # Optimize SVG with SVGO
+    svgo --disable=cleanupIDs --disable=mergePaths --disable=removeUnknownsAndDefaults --enable=removeUselessStrokeAndFill --enable=removeTitle --enable=removeDesc --input=${SVG} --output="$1/$FILENAME.$SUFFIX.svg"
+
+done
+shopt -u extglob

@@ -11,6 +11,7 @@ featuring the liver and kidney. The illutrations have been created in for the
 [Semantic Body Browser][sbb] - a tool for graphically exploring an organism's
 body. (Lekschas *et al.*)
 
+
 Annotation
 ----------
 
@@ -33,17 +34,29 @@ Cells: [CL][cl]
 Sub-cellular components: [GO][go] and [BT][bt]
 Anything else: [CELDA][celda]
 
+
+Minimize
+--------
+If you are planning to use the illustrations in your web application I recommend optimizing the file size with [svgo][svgo]. You can use our script like so:
+
+`$ optimize <directory>`
+
+E.g. `directory` could be `homo-sapiens`. For details regarding the script see `$ optimize -h` and regarding `svgo` please have a look at its [project page][svgo].
+
+
 Contributions
 -------------
 
 You like to contribute? Great! Please [request a pull][pull] and add yourself to
 the list of licenses below.
 
+
 Issues
 ------
 
 If you find any issues please be so kind and report them [here][issues] and we
 swear to fix them as soon as possible.
+
 
 License
 -------
@@ -90,4 +103,5 @@ License
 [pull]: https://github.com/flekschas/sbi/pulls
 [rdfa]: http://www.w3.org/TR/rdfa-syntax/ "RDF in Attributes"
 [sbb]: http://sbb.cellfinder.org "Semantic Body Browser"
+[svgo]: https://github.com/svg/svgo "SVG Optimizer"
 [uberon]: http://bioportal.bioontology.org/ontologies/UBERON "Uber Anatomy Ontology"
