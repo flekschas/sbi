@@ -11,6 +11,15 @@ featuring the liver and kidney. The illutrations have been created in for the
 [Semantic Body Browser][sbb] - a tool for graphically exploring an organism's
 body. (Lekschas *et al.*)
 
+Citation
+--------
+
+Please cite our paper when you use the illustrations:
+
+[Lekschas, Fritz, et al. "Semantic Body Browser: graphical exploration of an organism and spatially resolved expression data visualization." Bioinformatics 31.5 (2014): 794-796.](https://academic.oup.com/bioinformatics/article/31/5/794/2748201)
+
+Thank you! :)
+
 
 Annotation
 ----------
